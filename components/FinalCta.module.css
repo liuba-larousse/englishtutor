@@ -12,12 +12,12 @@
 .starA {
   position: absolute;
   top: 36px;
-  right: 12%;
+  right: 10%;
 }
-.starB {
-  position: absolute;
-  bottom: 40px;
-  left: 10%;
+@media (max-width: 720px) {
+  .starA {
+    display: none;
+  }
 }
 
 .title {

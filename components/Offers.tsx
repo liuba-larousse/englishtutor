@@ -1,6 +1,5 @@
 import { site } from "@/content/site";
 import { Check, ArrowUpRight } from "./ui/Icons";
-import Asterisk from "./ui/Asterisk";
 import styles from "./Offers.module.css";
 
 export default function Offers() {
@@ -16,8 +15,6 @@ export default function Offers() {
         </div>
 
         <div className={styles.card}>
-          <Asterisk color="ink" size={64} className={styles.star} />
-
           <div className={styles.left}>
             <span className={styles.badge}>🎁 {offer.badge}</span>
             <h3 className={styles.name}>{offer.name}</h3>

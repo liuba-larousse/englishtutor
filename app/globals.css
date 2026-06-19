@@ -10,7 +10,7 @@
   --teal: #bcd7d2;
   --ink: #0e0e10;
   --ink-700: #2a2a2e;
-  --muted: #6b6b72;
+  --muted: #5a5a61;
   --line: #e7e7e3;
   --bg: #f4f4f2;
   --surface: #ffffff;
@@ -94,6 +94,19 @@ ul {
 button {
   font: inherit;
   cursor: pointer;
+}
+
+/* Visible keyboard focus on all interactive elements (ink ring on light/lime;
+   overridden to lime on the dark footer — see Footer.module.css). */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+.btn:focus-visible,
+.pill:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 2px;
 }
 
 /* ============================================================

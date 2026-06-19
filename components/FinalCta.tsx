@@ -11,7 +11,6 @@ export default function FinalCta() {
       <div className="container">
         <div className={styles.card}>
           <Asterisk color="ink" size={70} className={styles.starA} />
-          <Asterisk color="ink" size={48} className={styles.starB} />
 
           <h2 className={styles.title}>{contact.title}</h2>
           <p className={styles.subtitle}>{contact.subtitle}</p>

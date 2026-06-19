@@ -8,7 +8,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
   gap: 48px;
   align-items: center;
 }
@@ -81,13 +81,7 @@
 .bannerStarA {
   position: absolute;
   top: -20px;
-  right: 18%;
-  z-index: 1;
-}
-.bannerStarB {
-  position: absolute;
-  bottom: 24px;
-  right: 8%;
+  right: 12%;
   z-index: 1;
 }
 
@@ -101,5 +95,10 @@
   }
   .banner {
     padding: 44px 30px;
+  }
+}
+@media (max-width: 720px) {
+  .bannerStarA {
+    display: none;
   }
 }

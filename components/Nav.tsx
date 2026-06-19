@@ -25,9 +25,6 @@ export default function Nav() {
         </nav>
 
         <div className={styles.actions}>
-          <button className={styles.lang} type="button" aria-label="Langue : français">
-            FR
-          </button>
           <a href={site.cta.href} className={`btn btn-primary ${styles.cta}`}>
             {site.cta.short}
             <ArrowUpRight />

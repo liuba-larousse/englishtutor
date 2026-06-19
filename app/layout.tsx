@@ -18,14 +18,23 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
   title: site.meta.title,
   description: site.meta.description,
   keywords: site.meta.keywords,
+  alternates: { canonical: "/" },
   openGraph: {
     title: site.meta.title,
     description: site.meta.description,
+    url: site.url,
+    siteName: site.brand.name,
     locale: "fr_FR",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: site.meta.title,
+    description: site.meta.description,
   },
 };
 

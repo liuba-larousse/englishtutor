@@ -3,6 +3,11 @@
   color: #fff;
   padding: 72px 0 36px;
 }
+/* Dark background → ink focus ring would be invisible; use lime here. */
+.footer a:focus-visible,
+.footer button:focus-visible {
+  outline-color: var(--lime);
+}
 .top {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;

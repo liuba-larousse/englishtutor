@@ -53,9 +53,6 @@ export default function Footer() {
                 {l.label}
               </a>
             ))}
-            <button type="button" className={styles.lang}>
-              FR
-            </button>
           </div>
         </div>
       </div>

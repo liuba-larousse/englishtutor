@@ -42,7 +42,6 @@ export default function Method() {
 
         <div className={styles.banner}>
           <Asterisk color="lime" size={88} className={styles.bannerStarA} />
-          <Asterisk color="lime" size={64} className={styles.bannerStarB} />
           <p>{method.banner}</p>
         </div>
       </div>

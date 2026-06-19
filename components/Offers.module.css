@@ -10,17 +10,12 @@
   position: relative;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 1.4fr 1fr;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
   gap: 48px;
-  background: var(--lime);
+  background: var(--surface);
+  border: 1px solid var(--line);
   border-radius: var(--r-lg);
   padding: 52px;
-}
-.star {
-  position: absolute;
-  top: 28px;
-  right: 36px;
-  opacity: 0.85;
 }
 
 .badge {
@@ -66,7 +61,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: var(--surface);
+  background: var(--lime);
   border-radius: var(--r-card);
   padding: 36px 30px;
   text-align: center;
@@ -84,18 +79,20 @@
 .unit {
   display: block;
   margin-top: 8px;
-  color: var(--muted);
+  color: var(--ink-700);
   font-weight: 600;
 }
 .cta {
   justify-content: center;
+  white-space: normal;
+  text-align: center;
 }
 .reassurances {
   display: flex;
   flex-direction: column;
   gap: 6px;
   margin-top: 18px;
-  color: var(--muted);
+  color: var(--ink-700);
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -109,12 +106,11 @@
 
 @media (max-width: 880px) {
   .card {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 28px;
-    padding: 36px 26px;
+    padding: 32px 22px;
   }
-  .star {
-    top: 20px;
-    right: 22px;
+  .right {
+    padding: 28px 20px;
   }
 }

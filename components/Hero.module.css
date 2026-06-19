@@ -4,7 +4,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 18px;
   align-items: stretch;
 }
@@ -23,13 +23,22 @@
   top: 32px;
   right: 40px;
 }
+@media (max-width: 720px) {
+  .leftStar {
+    display: none;
+  }
+  .eyebrow {
+    padding-right: 0;
+  }
+}
 .eyebrow {
   font-weight: 700;
   font-size: 0.85rem;
   letter-spacing: 0.01em;
   color: var(--ink-700);
   margin-bottom: 18px;
-  max-width: 30em;
+  max-width: 28em;
+  padding-right: 56px;
 }
 .title {
   font-size: clamp(2.1rem, 4vw, 3.4rem);

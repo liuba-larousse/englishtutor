@@ -10,6 +10,10 @@ const PREPLY = "https://preply.in/OLAIDE6EN1608992710";
 const YOUTUBE = "https://youtu.be/A4XALvwHasQ";
 
 export const site = {
+  /* ---- Site URL (used by metadata, canonical, sitemap, JSON-LD) ----
+     TODO: set NEXT_PUBLIC_SITE_URL at deploy, or update this placeholder. */
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.olaide-anglais.fr",
+
   /* ---- Brand / SEO ---- */
   brand: {
     name: "Olaide",
@@ -61,7 +65,7 @@ export const site = {
 
   /* ---- Hero ---- */
   hero: {
-    eyebrow: "Olaide · Professeur natif · Certifié TEFL · 4.9 ⭐ sur Preply",
+    eyebrow: "Professeur natif · Certifié TEFL · 4.9 ⭐ sur Preply",
     titleLines: ["De « je bloque en anglais »", "à prendre la parole avec assurance"],
     subtitle:
       "Vous comprenez l'anglais mais vous bloquez dès qu'il faut parler. C'est exactement ce qu'on travaille — ensemble, à votre rythme, en cours individuels en ligne.",
@@ -89,7 +93,7 @@ export const site = {
     { value: "TEFL", label: "professeur natif certifié" },
   ],
   trust: {
-    title: "Avis vérifiés sur Preply · 4.9/5 · 21 avis",
+    title: "Avis vérifiés sur Preply · 4.9/5 · 35+ avis",
     badges: ["Professeur natif", "Certifié TEFL", "1-on-1 en vidéo", "Annulation 24h"],
     linkLabel: "Voir le profil Preply →",
     linkHref: PREPLY,
@@ -199,7 +203,7 @@ export const site = {
     credentials: [
       "Certifié TEFL · professeur natif",
       "850+ cours complétés",
-      "4.9 ⭐ · 21 avis vérifiés sur Preply",
+      "4.9 ⭐ · 35+ avis vérifiés sur Preply",
       "7 ans d'expérience en enseignement",
     ],
     image: "/images/olaide.jpg",
@@ -208,11 +212,11 @@ export const site = {
 
   /* ---- Testimonials ----
      Real verified Preply reviews (transcribed from the original page's review
-     screenshots). 21 reviews total — see the Preply profile. */
+     screenshots). 35+ reviews total — see the Preply profile. */
   testimonials: {
     title: "Ce que disent ceux qui apprennent avec moi",
-    subtitle: "Avis vérifiés sur Preply · 4.9 ⭐ · 21 avis",
-    preplyLabel: "Lire les 21 avis sur Preply →",
+    subtitle: "Avis vérifiés sur Preply · 4.9 ⭐ · 35+ avis",
+    preplyLabel: "Lire les avis sur Preply →",
     preplyHref: PREPLY,
     items: [
       {
@@ -237,7 +241,7 @@ export const site = {
     summary: {
       rating: "4.9",
       stars: "★★★★★",
-      reviews: "21 avis vérifiés",
+      reviews: "35+ avis vérifiés",
       lessons: "850+ cours complétés",
       ctaLabel: "Lire tous les avis sur Preply",
       ctaHref: PREPLY,
@@ -315,7 +319,7 @@ export const site = {
     bookLabel: "Réserver mon cours gratuit →",
     bookHref: CALENDLY,
     reassurances: ["Sans engagement", "Aucune carte requise", "Annulation libre"],
-    preplyLabel: "4.9 ⭐ · 21 avis vérifiés sur Preply →",
+    preplyLabel: "4.9 ⭐ · 35+ avis vérifiés sur Preply →",
     preplyHref: PREPLY,
   },
 
