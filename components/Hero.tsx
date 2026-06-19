@@ -1,7 +1,7 @@
-import Image from "next/image";
 import { site } from "@/content/site";
-import { ArrowUpRight, Play } from "./ui/Icons";
+import { ArrowUpRight } from "./ui/Icons";
 import Asterisk from "./ui/Asterisk";
+import HeroVideo from "./HeroVideo";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
@@ -44,32 +44,15 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right — video placeholder */}
+        {/* Right — inline video */}
         <div className={styles.right}>
-          <a
-            href={hero.video.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.video}
-            aria-label={`${hero.video.label} (${hero.video.duration})`}
-          >
-            <Image
-              src={hero.image}
-              alt={hero.imageAlt}
-              fill
-              priority
-              sizes="(max-width: 980px) 100vw, 600px"
-              className={styles.poster}
-            />
-            <span className={styles.scrim} />
-            <span className={styles.playBtn}>
-              <Play />
-            </span>
-            <span className={styles.videoLabel}>
-              {hero.video.label}
-              <span className={styles.duration}>{hero.video.duration}</span>
-            </span>
-          </a>
+          <HeroVideo
+            image={hero.image}
+            alt={hero.imageAlt}
+            youtubeId={hero.video.youtubeId}
+            label={hero.video.label}
+            duration={hero.video.duration}
+          />
           <p className={styles.videoCaption}>{hero.video.caption}</p>
         </div>
       </div>

@@ -12,11 +12,12 @@
 }
 
 .cloud {
-  position: relative;
-  min-height: 440px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 14px 12px;
 }
 .tag {
-  position: absolute;
   font-weight: 700;
   font-size: 1.02rem;
   padding: 12px 22px;
@@ -40,8 +41,8 @@
     gap: 8px;
   }
   .cloud {
-    min-height: 380px;
     order: 2;
+    margin-top: 8px;
   }
   .copy {
     order: 1;

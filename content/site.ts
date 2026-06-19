@@ -61,7 +61,7 @@ export const site = {
 
   /* ---- Hero ---- */
   hero: {
-    eyebrow: "Olaide · Professeur natif · Certifié TEFL · 5.0 ⭐ sur Preply",
+    eyebrow: "Olaide · Professeur natif · Certifié TEFL · 4.9 ⭐ sur Preply",
     titleLines: ["De « je bloque en anglais »", "à prendre la parole avec assurance"],
     subtitle:
       "Vous comprenez l'anglais mais vous bloquez dès qu'il faut parler. C'est exactement ce qu'on travaille — ensemble, à votre rythme, en cours individuels en ligne.",
@@ -73,8 +73,9 @@ export const site = {
     video: {
       label: "Regarder ma présentation",
       duration: "1 min",
+      youtubeId: "A4XALvwHasQ",
       href: YOUTUBE,
-      caption: "Professeur natif certifié TEFL · 5.0 ⭐ sur Preply",
+      caption: "Professeur natif certifié TEFL · 4.9 ⭐ sur Preply",
     },
     image: "/images/olaide.jpg",
     imageAlt: "Olaide, professeur d'anglais natif certifié TEFL",
@@ -83,7 +84,7 @@ export const site = {
   /* ---- Trust / stats ---- */
   stats: [
     { value: "850+", label: "cours complétés" },
-    { value: "5.0 ⭐", label: "note moyenne Preply" },
+    { value: "4.9 ⭐", label: "note moyenne Preply" },
     { value: "7 ans", label: "d'expérience" },
     { value: "TEFL", label: "professeur natif certifié" },
   ],
@@ -138,14 +139,24 @@ export const site = {
       "présentations",
       "négociation",
       "emails pro",
+      "appels clients",
+      "entretiens d'embauche",
+      "prise de parole",
+      "confiance à l'oral",
+      "conversation",
+      "prononciation",
+      "small talk",
+      "networking",
+      "voyages d'affaires",
+      "vocabulaire métier",
       "BTS oral",
       "TOEIC",
       "IELTS",
+      "examens universitaires",
       "immobilier",
       "logistique",
       "commerce international",
       "tourisme",
-      "prise de parole",
     ],
   },
 
@@ -188,7 +199,7 @@ export const site = {
     credentials: [
       "Certifié TEFL · professeur natif",
       "850+ cours complétés",
-      "5.0 ⭐ · 21 avis vérifiés sur Preply",
+      "4.9 ⭐ · 21 avis vérifiés sur Preply",
       "7 ans d'expérience en enseignement",
     ],
     image: "/images/olaide.jpg",
@@ -200,7 +211,7 @@ export const site = {
      screenshots). 21 reviews total — see the Preply profile. */
   testimonials: {
     title: "Ce que disent ceux qui apprennent avec moi",
-    subtitle: "Avis vérifiés sur Preply · 5.0 ⭐ · 21 avis",
+    subtitle: "Avis vérifiés sur Preply · 4.9 ⭐ · 21 avis",
     preplyLabel: "Lire les 21 avis sur Preply →",
     preplyHref: PREPLY,
     items: [
@@ -224,7 +235,7 @@ export const site = {
       },
     ],
     summary: {
-      rating: "5.0",
+      rating: "4.9",
       stars: "★★★★★",
       reviews: "21 avis vérifiés",
       lessons: "850+ cours complétés",
@@ -304,7 +315,7 @@ export const site = {
     bookLabel: "Réserver mon cours gratuit →",
     bookHref: CALENDLY,
     reassurances: ["Sans engagement", "Aucune carte requise", "Annulation libre"],
-    preplyLabel: "5.0 ⭐ · 21 avis vérifiés sur Preply →",
+    preplyLabel: "4.9 ⭐ · 21 avis vérifiés sur Preply →",
     preplyHref: PREPLY,
   },
 
