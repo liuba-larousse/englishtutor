@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="760" viewBox="0 0 640 760" role="img" aria-label="Photo du professeur (placeholder)">
+  <rect width="640" height="760" fill="#bcd7d2"/>
+  <g fill="#9ec1ba">
+    <circle cx="320" cy="300" r="150"/>
+    <path d="M120 760c0-150 90-250 200-250s200 100 200 250z"/>
+  </g>
+  <text x="320" y="715" font-family="Manrope, sans-serif" font-size="22" font-weight="700" fill="#5d7e78" text-anchor="middle">Photo du professeur</text>
+</svg>

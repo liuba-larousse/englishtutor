@@ -1,0 +1,80 @@
+.wrap {
+  padding: 40px 0 80px;
+}
+.card {
+  position: relative;
+  overflow: hidden;
+  background: var(--lime);
+  border-radius: var(--r-lg);
+  padding: 80px 56px;
+  text-align: center;
+}
+.starA {
+  position: absolute;
+  top: 36px;
+  right: 12%;
+}
+.starB {
+  position: absolute;
+  bottom: 40px;
+  left: 10%;
+}
+
+.title {
+  position: relative;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  margin-bottom: 18px;
+}
+.subtitle {
+  position: relative;
+  font-size: 1.15rem;
+  color: var(--ink-700);
+  max-width: 34em;
+  margin: 0 auto 34px;
+}
+
+.book {
+  position: relative;
+  font-size: 1.1rem;
+  padding: 18px 34px;
+}
+
+.reassurances {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 26px;
+}
+.chip {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: var(--r-pill);
+  padding: 8px 16px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.preply {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 30px;
+  font-weight: 700;
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 2px;
+}
+.preply svg {
+  width: 15px;
+  height: 15px;
+}
+
+@media (max-width: 880px) {
+  .card {
+    padding: 56px 24px;
+  }
+  .starA {
+    right: 6%;
+  }
+}

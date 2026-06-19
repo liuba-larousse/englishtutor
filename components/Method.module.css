@@ -1,0 +1,105 @@
+.head {
+  max-width: 640px;
+  margin-bottom: 48px;
+}
+.head .h2 {
+  margin-bottom: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.step {
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  padding: 26px 28px;
+}
+.num {
+  flex: none;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--lime);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.stepTitle {
+  font-size: 1.35rem;
+  margin-bottom: 6px;
+}
+.stepText {
+  color: var(--ink-700);
+  font-size: 0.98rem;
+}
+
+.media {
+  position: relative;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  min-height: 480px;
+  background: var(--blue);
+}
+.photo {
+  object-fit: cover;
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  margin-top: 24px;
+  background: var(--ink);
+  color: #fff;
+  border-radius: var(--r-lg);
+  padding: 64px 56px;
+}
+.banner p {
+  position: relative;
+  z-index: 2;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.4rem, 2.6vw, 2.1rem);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  max-width: 22em;
+}
+.bannerStarA {
+  position: absolute;
+  top: -20px;
+  right: 18%;
+  z-index: 1;
+}
+.bannerStarB {
+  position: absolute;
+  bottom: 24px;
+  right: 8%;
+  z-index: 1;
+}
+
+@media (max-width: 880px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .media {
+    min-height: 360px;
+    order: -1;
+  }
+  .banner {
+    padding: 44px 30px;
+  }
+}

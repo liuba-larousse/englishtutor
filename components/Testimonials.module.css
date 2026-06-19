@@ -1,0 +1,128 @@
+.head {
+  max-width: 640px;
+  margin-bottom: 48px;
+}
+.head .h2 {
+  margin: 16px 0;
+}
+.preply {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  font-weight: 700;
+  border-bottom: 2px solid var(--lime);
+  padding-bottom: 2px;
+}
+.preply svg {
+  width: 15px;
+  height: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch;
+}
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-card);
+  padding: 32px 30px;
+  display: flex;
+  flex-direction: column;
+}
+.stars {
+  color: var(--ink);
+  letter-spacing: 3px;
+  font-size: 1.05rem;
+  margin-bottom: 16px;
+}
+.quote {
+  color: var(--ink-700);
+  font-size: 1.02rem;
+  margin-bottom: 26px;
+  flex: 1;
+}
+.author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.avatar {
+  flex: none;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--lime);
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+.name {
+  display: block;
+  font-size: 1rem;
+}
+.role {
+  display: block;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.summary {
+  margin-top: 18px;
+  background: var(--lime);
+  border-radius: var(--r-card);
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.summaryRating {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.summaryNum {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+.summaryStars {
+  color: var(--ink);
+  letter-spacing: 3px;
+  font-size: 1.3rem;
+}
+.summaryMeta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+.dot {
+  color: var(--ink-700);
+}
+.summaryCta {
+  justify-content: center;
+}
+.summaryCta svg {
+  width: 15px;
+  height: 15px;
+}
+
+@media (max-width: 880px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .summary {
+    padding: 26px 22px;
+    gap: 18px;
+  }
+}

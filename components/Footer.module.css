@@ -1,0 +1,84 @@
+.footer {
+  background: var(--ink);
+  color: #fff;
+  padding: 72px 0 36px;
+}
+.top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.7rem;
+  letter-spacing: -0.04em;
+}
+.tagline {
+  margin: 14px 0 24px;
+  color: rgba(255, 255, 255, 0.66);
+  max-width: 26em;
+}
+.cta {
+  display: inline-flex;
+}
+
+.linksCol {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.linksCol h4 {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 4px;
+}
+.linksCol a {
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+.linksCol a:hover {
+  color: var(--lime);
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 28px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.9rem;
+}
+.legal {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+.legal a:hover {
+  color: #fff;
+}
+.lang {
+  background: var(--lime);
+  color: var(--ink);
+  border: none;
+  border-radius: var(--r-pill);
+  padding: 7px 14px;
+  font-weight: 700;
+}
+
+@media (max-width: 760px) {
+  .top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

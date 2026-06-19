@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="540" viewBox="0 0 720 540" role="img" aria-label="Cours en visioconférence (placeholder)">
+  <rect width="720" height="540" fill="#dce6f5"/>
+  <g fill="#b9c8e3">
+    <circle cx="360" cy="220" r="110"/>
+    <path d="M200 540c0-110 70-180 160-180s160 70 160 180z"/>
+  </g>
+  <text x="360" y="505" font-family="Manrope, sans-serif" font-size="22" font-weight="700" fill="#6f80a6" text-anchor="middle">Cours en visioconférence</text>
+</svg>
