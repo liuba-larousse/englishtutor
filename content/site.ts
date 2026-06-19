@@ -82,7 +82,7 @@ export const site = {
       href: YOUTUBE,
       caption: "Professeur natif certifié TEFL · 4.9 ⭐ sur Preply",
     },
-    image: "/images/olaide.jpg",
+    image: "/images/olaide-street.jpg",
     imageAlt: "Olaide, professeur d'anglais natif certifié TEFL",
   },
 
