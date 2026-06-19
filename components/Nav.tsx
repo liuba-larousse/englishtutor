@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { site } from "@/content/site";
 import { ArrowUpRight } from "./ui/Icons";
+import Logo from "./Logo";
 import styles from "./Nav.module.css";
 
 export default function Nav() {
@@ -11,9 +12,8 @@ export default function Nav() {
   return (
     <header className={styles.header}>
       <div className={`container ${styles.bar}`}>
-        <a href="#top" className={styles.logo} aria-label={site.brand.name}>
-          {site.brand.name}
-          <span className={styles.logoDot} />
+        <a href="#top" className={styles.logo} aria-label={site.brand.fullName}>
+          <Logo />
         </a>
 
         <nav className={styles.navDesktop} aria-label="Navigation principale">

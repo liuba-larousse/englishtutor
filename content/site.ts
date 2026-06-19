@@ -17,7 +17,8 @@ export const site = {
   /* ---- Brand / SEO ---- */
   brand: {
     name: "Olaide",
-    fullName: "Olaide — Cours d'anglais individuel",
+    eyebrow: "Anglais avec",
+    fullName: "Anglais avec Olaide",
   },
   meta: {
     title: "Cours d'Anglais Individuel · Premier Cours Gratuit | Olaide",

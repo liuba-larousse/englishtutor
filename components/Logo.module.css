@@ -1,0 +1,38 @@
+.logo {
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1;
+}
+.eyebrow {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.name {
+  display: inline-flex;
+  align-items: flex-end;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--lime);
+  margin: 0 0 5px 4px;
+}
+
+/* For dark backgrounds (footer) */
+.light .eyebrow {
+  color: rgba(255, 255, 255, 0.6);
+}
+.light .name {
+  color: #fff;
+}

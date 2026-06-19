@@ -1,5 +1,6 @@
 import { site } from "@/content/site";
 import { ArrowUpRight } from "./ui/Icons";
+import Logo from "./Logo";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -11,7 +12,7 @@ export default function Footer() {
       <div className="container">
         <div className={styles.top}>
           <div className={styles.brandCol}>
-            <span className={styles.logo}>{brand.name}</span>
+            <Logo variant="light" />
             <p className={styles.tagline}>{footer.tagline}</p>
             <a href={cta.href} className={`btn btn-lime ${styles.cta}`}>
               {cta.label}
