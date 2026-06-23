@@ -12,7 +12,7 @@ const YOUTUBE = "https://youtu.be/A4XALvwHasQ";
 export const site = {
   /* ---- Site URL (used by metadata, canonical, sitemap, JSON-LD) ----
      TODO: set NEXT_PUBLIC_SITE_URL at deploy, or update this placeholder. */
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.olaide-anglais.fr",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.anglaisavecolaide.fr",
 
   /* ---- Brand / SEO ---- */
   brand: {
