@@ -324,6 +324,62 @@ export const site = {
     preplyHref: PREPLY,
   },
 
+  /* ---- SEO footer link grid ---- */
+  seoFooter: {
+    columns: [
+      {
+        heading: "Apprendre l'anglais",
+        links: [
+          { label: "Cours d'anglais en ligne", href: "#" },
+          { label: "Anglais professionnel en ligne", href: "#" },
+          { label: "Anglais des affaires en ligne", href: "#" },
+          { label: "Conversation en anglais", href: "#" },
+          { label: "Anglais débutant en ligne", href: "#" },
+          { label: "Anglais pour les examens", href: "#" },
+        ],
+      },
+      {
+        heading: "Cours d'anglais en ligne",
+        links: [
+          { label: "Cours d'anglais individuel 1-on-1", href: "#" },
+          { label: "Business English en ligne", href: "#" },
+          { label: "Préparation TOEIC", href: "#" },
+          { label: "Préparation IELTS", href: "#" },
+          { label: "Anglais BTS en ligne", href: "#" },
+          { label: "Prononciation et oral anglais", href: "#" },
+          { label: "Anglais pour entretiens d'embauche", href: "#" },
+        ],
+      },
+      {
+        heading: "Professeurs d'anglais",
+        links: [
+          { label: "Professeur d'anglais natif", href: "#" },
+          { label: "Professeur TEFL certifié", href: "#" },
+          { label: "Cours 1-on-1 en visioconférence", href: "#" },
+          { label: "Anglais pour professionnels", href: "#" },
+          { label: "Anglais pour étudiants", href: "#" },
+          { label: "Anglais pour métiers spécialisés", href: "#" },
+        ],
+      },
+      {
+        heading: "Cours d'anglais par ville",
+        links: [
+          { label: "Cours d'anglais à Paris", href: "#" },
+          { label: "Cours d'anglais à Lyon", href: "#" },
+          { label: "Cours d'anglais à Marseille", href: "#" },
+          { label: "Cours d'anglais à Toulouse", href: "#" },
+          { label: "Cours d'anglais à Bordeaux", href: "#" },
+          { label: "Cours d'anglais à Nantes", href: "#" },
+          { label: "Cours d'anglais à Lille", href: "#" },
+          { label: "Cours d'anglais à Nice", href: "#" },
+          { label: "Cours d'anglais à Strasbourg", href: "#" },
+          { label: "Cours d'anglais à Montpellier", href: "#" },
+          { label: "Cours d'anglais à Rennes", href: "#" },
+        ],
+      },
+    ],
+  },
+
   /* ---- Footer ---- */
   footer: {
     tagline:

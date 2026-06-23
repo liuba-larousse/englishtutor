@@ -1,7 +1,43 @@
 .footer {
   background: var(--ink);
   color: #fff;
-  padding: 72px 0 36px;
+  padding: 0 0 36px;
+}
+
+/* ---- SEO link grid ---- */
+.seoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 32px;
+  padding: 56px 0 48px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.seoCol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.seoHeading {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 6px;
+}
+.seoLink {
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 0.875rem;
+  font-weight: 400;
+  transition: color 0.15s ease;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+.seoLink:hover {
+  color: #fff;
+  text-decoration-color: rgba(255, 255, 255, 0.5);
 }
 /* Dark background → ink focus ring would be invisible; use lime here. */
 .footer a:focus-visible,
@@ -12,7 +48,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   gap: 40px;
-  padding-bottom: 48px;
+  padding: 56px 0 48px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
@@ -79,6 +115,18 @@
   border-radius: var(--r-pill);
   padding: 7px 14px;
   font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .seoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .seoGrid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
 }
 
 @media (max-width: 760px) {

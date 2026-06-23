@@ -4,12 +4,25 @@ import Logo from "./Logo";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
-  const { footer, brand, nav, cta } = site;
+  const { footer, seoFooter, brand, nav, cta } = site;
   const year = 2026;
 
   return (
     <footer className={styles.footer}>
       <div className="container">
+        <div className={styles.seoGrid}>
+          {seoFooter.columns.map((col) => (
+            <div key={col.heading} className={styles.seoCol}>
+              <h3 className={styles.seoHeading}>{col.heading}</h3>
+              {col.links.map((link) => (
+                <a key={link.label} href={link.href} className={styles.seoLink}>
+                  {link.label}
+                </a>
+              ))}
+            </div>
+          ))}
+        </div>
+
         <div className={styles.top}>
           <div className={styles.brandCol}>
             <Logo variant="light" />
