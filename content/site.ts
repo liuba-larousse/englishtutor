@@ -189,8 +189,8 @@ export const site = {
     ],
     banner:
       "Pas de manuel, pas de programme standard. Chaque minute du cours est construite autour de vos vraies situations — pour que l'anglais finisse par sortir tout seul.",
-    image: "/images/tutor-method.svg", // TODO: capture / photo de cours
-    imageAlt: "Cours d'anglais individuel en visioconférence",
+    image: "/images/olaide-cours.png",
+    imageAlt: "Cours d'anglais individuel en visioconférence avec Olaide",
   },
 
   /* ---- About + mot du professeur ---- */
