@@ -15,14 +15,14 @@ export default function FinalCta() {
           <h2 className={styles.title}>{contact.title}</h2>
           <p className={styles.subtitle}>{contact.subtitle}</p>
 
-          <a
-            href={contact.bookHref}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            type="button"
+            data-cal-link="olaide-olaniyan-y6kinu/30min"
+            data-cal-config='{"layout":"month_view"}'
             className={`btn btn-primary ${styles.book}`}
           >
             {contact.bookLabel}
-          </a>
+          </button>
 
           <div className={styles.reassurances}>
             {contact.reassurances.map((r) => (

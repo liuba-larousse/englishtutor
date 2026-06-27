@@ -5,7 +5,7 @@
    Items still needing real assets are marked  TODO.
    ============================================================================ */
 
-const CALENDLY = "https://calendly.com/olaniyanolaide/discovery-call";
+const CALENDLY = "https://cal.com/olaide-olaniyan-y6kinu/30min";
 const PREPLY = "https://preply.in/OLAIDE6EN1608992710";
 const YOUTUBE = "https://youtu.be/A4XALvwHasQ";
 
